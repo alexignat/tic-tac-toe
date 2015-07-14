@@ -25,7 +25,7 @@ var winningCombinations = [
 
 
 var checkWinner = function() {
-  // horizontal
+  // horizontals
   if ( ($('#0').text() === "X" && $('#1').text() === "X") && ($('#1').text() === "X" && $("#2").text() === "X") ) {
     alert("WINNER!");
   } else if ( ($('#0').text() === "O" && $('#1').text() === "O") && ($('#1').text() === "O" && $("#2").text() === "O") ) {
@@ -53,7 +53,7 @@ var checkWinner = function() {
   } else if ( ($('#2').text() === "O" && $('#5').text() === "O") && ($('#5').text() === "O" && $("#8").text() === "O") ) {
     alert("WINNER!");
 
-    // horizontals
+    // diagonals
   } else if ( ($('#0').text() === "X" && $('#4').text() === "X") && ($('#4').text() === "X" && $("#8").text() === "X") ) {
     alert("WINNER!");
   } else if ( ($('#0').text() === "O" && $('#4').text() === "O") && ($('#4').text() === "O" && $("#8").text() === "O") ) {
